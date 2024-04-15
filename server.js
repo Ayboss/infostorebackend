@@ -3,8 +3,8 @@ require("dotenv").config();
 
 const app = require("./app");
 
-console.log(process.env.MONGOURL, "str");
-mongoose.connect(process.env.MONGOURL).then(() => {
+// console.log(process.env.MONGOURL, "str");
+mongoose.connect(process.env.MONOGOURLPROD).then(() => {
   console.log("Connection succesful");
 });
 
